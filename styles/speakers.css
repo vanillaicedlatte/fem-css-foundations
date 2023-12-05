@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@400;700&display=swap");
+@import "/styles/base.css";
+
+.body__secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  font-family: "Inter", "sans-serif";
+}
+
+.shopping-cart-icon--primary g path {
+  fill: var(--color-primary);
+}
+
+.main__heading {
+  font-size: 98px;
+}
+
+.header__close-menu path {
+  fill: var(--color-primary);
+}
+
+.header__menu path {
+  fill: var(--color-primary);
+}
+
+.speaker__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.speaker__wrapper {
+  width: 400px;
+}
+
+.speaker__photo {
+  width: 310px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.speaker__photo--top {
+  object-position: top center;
+}
+
+.speaker__name {
+  font-size: 32px;
+  margin: 36px 0 20px 0;
+}
+
+.speaker__company {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.speaker__bio {
+  font-size: 20px;
+}
+
+.speaker__company,
+.speaker__bio {
+  color: var(--color-black);
+}
+
+@media (width < 1264px) {
+  .speaker__wrapper {
+    width: 100%;
+  }
+
+  .main__heading {
+    font-size: 68px;
+  }
+}

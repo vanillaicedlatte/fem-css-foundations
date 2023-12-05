@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter:wght@400;700&display=swap");
 @import "/styles/base.css";
 
-.main {
-  padding: 150px;
+.body__primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: "Inter", "sans-serif";
 }
 
 .main__heading {
@@ -19,4 +21,23 @@
   flex-direction: row;
   gap: 24px;
   margin-top: 100px;
+}
+
+@media (width < 1264px) {
+  .main__heading {
+    font-size: 72px;
+  }
+
+  .main__subheading {
+    font-size: 28px;
+  }
+}
+
+@media (width < 620px) {
+  .main__heading {
+    font-size: 48px;
+  }
+  .button-container {
+    flex-direction: column;
+  }
 }
